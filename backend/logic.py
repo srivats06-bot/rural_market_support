@@ -23,10 +23,17 @@ def recommend_best_mandi(crop, location, quantity):
         if net_profit > highest_profit:
             highest_profit = net_profit
             best_mandi = mandi["name"]
+            reason = (
+            f"{best_mandi} gives the highest net profit after considering "
+            "transportation cost and current mandi prices."
+            )
+
+        
+        
 
     return {
         "recommended_mandi": best_mandi,
         "details": details,
-        "explanation": "Recommended based on highest net profit after transportation cost.",
+        "explanation": reason,
         "msp": MSP.get(crop.lower(), "N/A")
     }

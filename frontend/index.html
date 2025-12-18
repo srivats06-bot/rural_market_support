@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    
     <meta charset="UTF-8">
     <title>Rural Market Support Platform</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Rural Market Support Platform</h1>
-    <p>Find the most profitable mandi to sell your crop</p>
+<h1 id="title" style="text-align:center; font-size: 60px;">Rural Market Support Platform</h1>
+<h3 id="description" class="subtitle" style="text-align:center;">
 
-    <div class="form">
-        <label>Crop:</label>
-        <select id="crop">
-            <option value="wheat">Wheat</option>
-            <option value="rice">Rice</option>
-        </select>
 
-        <label>Quantity (quintals):</label>
-        <input type="number" id="quantity" value="1">
+    Helping farmers choose the most profitable mandi with clarity and trust
+</h3>
 
-        <button onclick="findBestMandi()">Find Best Mandi</button>
-    </div>
+<div id="start-section" class="center">
+    <button style = "width: 300px; font-size: 20px;" onclick="showForm()">Select Crop</button>
+</div>
 
-    <div id="result"></div>
+<div id="form-section" class="card hidden form-card">
+    <label>Crop</label>
+    <select id="crop">
+        <option value="wheat">Wheat</option>
+        <option value="rice">Rice</option>
+    </select>
 
-    <script src="script.js"></script>
+    <label>Quantity (quintals)</label>
+    <input type="number" id="quantity" value="1">
+
+    <button onclick="findBestMandi()">Find Best Mandi</button>
+</div>
+
+<div id="result-section"></div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
