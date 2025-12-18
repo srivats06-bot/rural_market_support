@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rural Market Support Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Rural Market Support Platform</h1>
+    <p>Find the most profitable mandi to sell your crop</p>
+
+    <div class="form">
+        <label>Crop:</label>
+        <select id="crop">
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+        </select>
+
+        <label>Quantity (quintals):</label>
+        <input type="number" id="quantity" value="1">
+
+        <button onclick="findBestMandi()">Find Best Mandi</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

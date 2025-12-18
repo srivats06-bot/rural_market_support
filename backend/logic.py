@@ -1,6 +1,9 @@
 from data import MANDI_DATA, COST_PER_KM, MSP
 
 def recommend_best_mandi(crop, location, quantity):
+    if not crop:
+        crop = "wheat"
+
     best_mandi = None
     highest_profit = float("-inf")
     details = []
@@ -24,6 +27,6 @@ def recommend_best_mandi(crop, location, quantity):
     return {
         "recommended_mandi": best_mandi,
         "details": details,
-        "explanation": "Recommended based on highest net profit after transport cost.",
-        "msp": MSP.get(crop, "N/A")
+        "explanation": "Recommended based on highest net profit after transportation cost.",
+        "msp": MSP.get(crop.lower(), "N/A")
     }
