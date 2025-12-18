@@ -7,34 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1 id="title" style="text-align:center; font-size: 60px;">Rural Market Support Platform</h1>
-<h3 id="description" class="subtitle" style="text-align:center;">
-
-
-    Helping farmers choose the most profitable mandi with clarity and trust
-</h3>
-
-<div id="start-section" class="center">
-    <button style = "width: 300px; font-size: 20px;" onclick="showForm()">Select Crop</button>
+<div id="hero" class="hero">
+    <div class="hero-overlay">
+        <h1>Rural Market Support Platform</h1>
+        <p>Helping farmers choose the most profitable mandi with clarity and trust</p>
+    </div>
 </div>
 
-<div id="form-section" class="card hidden form-card">
-    <label>Crop</label>
-    <select id="crop">
-        <option value="wheat">Wheat</option>
-        <option value="rice">Rice</option>
-    </select>
 
-    <label>Quantity (quintals)</label>
-    <input type="number" id="quantity" value="1">
+<div class="container">
 
-    <button onclick="findBestMandi()">Find Best Mandi</button>
+    <div id="start-section" class="center">
+        <button class="primary-btn" onclick="showForm()">Select Crop</button>
+    </div>
+
+    <div id="form-section" class="card hidden">
+        <label>Crop</label>
+        <select id="crop">
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+        </select>
+
+        <label>Quantity (quintals)</label>
+        <input type="number" id="quantity" value="1">
+
+        <div class="button-row">
+            <button class="secondary-btn" onclick="goBack()">Back</button>
+            <button class="primary-btn" onclick="findBestMandi()">Find Best Mandi</button>
+        </div>
+    </div>
+
+    <div id="result-section"></div>
+
 </div>
-
-<div id="result-section"></div>
 
 <script src="script.js"></script>
+
 
 </body>
 </html>
