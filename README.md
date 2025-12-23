@@ -1,2 +1,7 @@
-# rural_market_support
-A rural market support platform to help farmers to choose the ideal Mandi location to sell their crops.
+# AgriGuide
+
+A rural market platform hosted to provide farmers assistance in choosing the most optimal Mandi for selling their crops.
+
+## Problem Statement
+
+
