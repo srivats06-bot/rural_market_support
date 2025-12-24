@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rural Market Support Platform
 
 A decision-support web platform that helps farmers choose the **most profitable mandi** to sell their crops by moving beyond price display to **net profit–based recommendations**.
@@ -102,3 +103,12 @@ cd frontend
 python -m http.server 5500
 
 ### Open http://localhost:5500 in any browser
+=======
+# AgriGuide
+
+A rural market platform hosted to provide farmers assistance in choosing the most optimal Mandi for selling their crops.
+
+## Problem Statement
+
+
+>>>>>>> b3a347e4fc8a5fabbb3978ce8f7fcc956a3ee477
